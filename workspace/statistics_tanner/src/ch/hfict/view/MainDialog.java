@@ -40,7 +40,6 @@ public class MainDialog extends Application {
 		Button calc_btn = new Button("Calculate");
 		calc_btn.setOnAction(
 				new EventHandler<ActionEvent>() {
-
 					@Override
 					public void handle(ActionEvent event) {
 						String input = input_fld.getText();
