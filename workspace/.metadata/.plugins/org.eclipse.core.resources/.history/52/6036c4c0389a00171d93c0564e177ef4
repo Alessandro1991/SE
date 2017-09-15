@@ -1,0 +1,54 @@
+package ch.hfict.io;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+
+public class buffReader {
+	public static void main(String[] args) throws FileNotFoundException {
+		
+		try {
+			BufferedReader buffR = new BufferedReader (new FileReader("new.txt"));
+			read(buffR);
+		}catch(IOException e) {
+			e.printStackTrace(); //gibt an weshalb nicht File öffnen / finden kann
+		}
+		
+		/*
+		try {
+			BufferedReader buffR = new BufferedReader (new FileReader("new.txt"));
+			String [] values = null;
+			try {
+				values = buffR.readLine().split(";");
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+			for (String c : values) {
+				System.out.println(c);//gibt an weshalb File nicht lesen kann
+			}
+			buffR.close();
+		}catch(IOException e) {
+			e.printStackTrace(); //gibt an weshalb nicht File öffnen / finden kann
+		}*/
+	}
+	
+	public static String [] read(BufferedReader r) {
+		String [] values = null;
+		
+		try {
+			values = r.readLine().split(";");
+			r.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		for (String c : values) {
+			System.out.println(c);//gibt an weshalb File nicht lesen kann
+		}
+		return values;
+	}
+	
+	
+
+}

@@ -1,0 +1,14 @@
+package ch.hfict.io;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class buffWriter {
+
+	public static void main(String[] args) throws IOException{
+		BufferedWriter buffW = new BufferedWriter(new FileWriter("new.txt"));
+
+	}
+
+}

@@ -1,0 +1,25 @@
+package ch.hfict.io;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+import ch.hfict.math.statistics;
+
+
+public class buffReader {
+	public static void main(String[] args) throws FileNotFoundException {
+		BufferedReader buff = new BufferedReader (new FileReader("new.txt"));
+		String [] values = null;
+		try {
+			values = buff.readLine().split(";");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		for (String c : values) {
+			System.out.println(c);
+		}
+	}
+
+}

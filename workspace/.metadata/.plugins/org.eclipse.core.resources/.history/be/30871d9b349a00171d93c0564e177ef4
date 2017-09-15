@@ -1,0 +1,10 @@
+package ch.hfict.io;
+
+public class buffReader {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
