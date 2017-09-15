@@ -1,0 +1,18 @@
+<project default="compile">
+  <property file="build.properties"/>
+  
+  <target name="init" description="create build directory">
+    <mkdir dir="${build.dir}" />
+  </target>
+  
+  <target name="compile" depends="init"
+	  description="compile all sources files">
+    <javac srcdir="src" destdir="${build.dir}" includeantruntime="True" />
+  </target>
+
+  <target name="package" depends="compile, init">
+    <jar destfile="app.jar"
+	 manifest="resources/manifest.mf"
+	 basedir="${build.dir}"/>
+  </target>
+</project>
