@@ -11,20 +11,19 @@ public class buffReader {
 		try {
 			BufferedReader buffR = new BufferedReader (new FileReader("new.txt"));
 			for (String c : read(buffR)) {
-				System.out.println(c);
+				System.out.println(c);//gibt an weshalb File nicht lesen kann
 			}
 		}catch(IOException e) {
-			e.printStackTrace(); //gibt an weshalb File nicht lesen kann
+			e.printStackTrace(); //gibt an weshalb nicht File öffnen / finden kann
 		}
 	}
 	public static String [] read(BufferedReader r) {
 		String [] values = null;
 		try {
 			values = r.readLine().split(";");
-			
 			r.close();
 		}catch (IOException e) {
-			e.printStackTrace();//gibt an weshalb nicht File öffnen / finden kann
+			e.printStackTrace();
 		}
 		return values;
 	}

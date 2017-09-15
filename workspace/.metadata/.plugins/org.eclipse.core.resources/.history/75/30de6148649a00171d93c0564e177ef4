@@ -22,6 +22,7 @@ public class buffReader {
 		try {
 			values = r.readLine().split(";");
 			
+			
 			r.close();
 		}catch (IOException e) {
 			e.printStackTrace();//gibt an weshalb nicht File öffnen / finden kann

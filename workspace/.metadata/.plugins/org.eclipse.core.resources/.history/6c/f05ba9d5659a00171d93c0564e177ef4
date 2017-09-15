@@ -14,15 +14,15 @@ public class buffWriter {
 		BufferedWriter buffW = new BufferedWriter(new FileWriter("new.txt"));
 		//buffW.write("1;22;333;xyz");
 		//buffW.newLine();
-		//	buffW.write("4444;55555,666666");
+	//	buffW.write("4444;55555,666666");
 		//buffW.newLine();
 		BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
 		String [] ayy = buffReader.read(r);
-		for (String s : ayy) {	
+		for (String s : ayy) {
 			buffW.write(s);
-			buffW.newLine();
 		}
-		//buffW.write(r.readLine());
+		;
+		buffW.write(r.readLine());
 		buffW.close();
 	}
 
