@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tabelle>
+		<titel>Bus-Linie</titel>
+	<linie>
+		<stop>
+			<laengengrad>-116.12</laengengrad>
+			<breitengrad>36.123</breitengrad>
+			<bezeichnung>Stagecoach Hotel and Casino</bezeichnung>
+			<kurzbezeichnung>shc</kurzbezeichnung>
+		</stop>
+	</linie>
+</tabelle>
