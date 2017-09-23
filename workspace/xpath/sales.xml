@@ -1,0 +1,16 @@
+<sales>
+	<product id="p1">Boxershorts</product>
+	<product id="p2">Socks</product>
+	<record>
+		<cust num="c1001">
+			<prodsale idref="p1">100</prodsale>
+			<prodsale idref="p2">200</prodsale>
+		</cust>	
+		<cust num="c1002">
+			<prodsale iref="p2">50</prodsale>
+		</cust>	
+		<cust num="c1003">	
+			<prodsale iref="p1">75</prodsale>
+			<prodsale iref="p2">15</prodsale>
+	</record>
+</sales>
