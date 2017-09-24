@@ -6,15 +6,24 @@
 
 	<xsl:template match="/tabelle">
 		<html>
-			<title>Haltestellen:</title>
 			<body>
+			<table border="1">
+				<tr>
+				<th>Bezeichnung</th>
+				<th>Kurzbezeichnung</th>
+				<th>Laengengrad</th>
+				<th>Breitengrad</th>
+				</tr>
 				<xsl:for-each select="stop">
-					<xsl:value-of select="bezeichnung" /><br/>
-					<xsl:value-of select="kurzbezeichnung" /><br/>
-					<xsl:value-of select="laengengrad" /><br/>
-					<xsl:value-of select="breitengrad" /><br/>	
+				<tr>
+					<td><xsl:value-of select="bezeichnung" /></td>
+					<td><xsl:value-of select="kurzbezeichnung" /></td>
+					<td><xsl:value-of select="laengengrad" /></td>
+					<td><xsl:value-of select="breitengrad" /></td>	
+				</tr>
 					<br/>
-				</xsl:for-each>				
+				</xsl:for-each>	
+			</table>			
 			</body>
 		</html>
 	</xsl:template>
