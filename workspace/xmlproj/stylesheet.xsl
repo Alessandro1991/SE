@@ -9,10 +9,10 @@
 			<body>
 			<table border="1">
 				<tr>
-				<th>Bezeichnung</th>
-				<th>Kurzbezeichnung</th>
-				<th>Laengengrad</th>
-				<th>Breitengrad</th>
+				<th>Bezeichnung </th>
+				<th>Kurzbezeichnung </th>
+				<th>Laengengrad </th>
+				<th>Breitengrad </th>
 				</tr>
 				<xsl:for-each select="stop">
 				<tr>
